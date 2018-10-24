@@ -7,13 +7,21 @@
 //
 
 #import "ViewController.h"
+#import "ViewControllerNode.h"
 
 @interface ViewController ()
 
 @end
 
+
+
 @implementation ViewController
 
+- (instancetype)init
+{
+    ViewControllerNode *node = [[ViewControllerNode alloc] init];
+    return [super initWithNode:node];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
